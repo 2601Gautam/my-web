@@ -1,0 +1,114 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.contact-main-div{
+    height: 100vh;
+    background-color: #BBE3D9;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-in-div{
+    width: 85%;
+    height: 85%;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+.title-div{
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+}
+.title-div > h1{
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 600;
+    color: black;
+}
+.contact-det{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Arapey', serif;
+    color: black;
+}       
+.contact-det  h2{
+    font-size: 2.5rem;
+}
+.contact-det ul{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+.email-id > ul > li > a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.688);
+}
+.email-id > ul > li{
+    margin: 2%;
+}
+.social-platform > ul > li > a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.688);
+}
+.email-id:hover{
+    border: 1px solid black;
+}
+.email-id:hover > ul > li > a{
+    color: rgb(0, 0, 0);
+}
+.social-platform:hover{
+    border: 1px solid black;
+}
+.social-platform:hover > ul > li > a{
+    color: rgb(0, 0, 0);
+}
+.social-platform > ul > li {
+    margin: 2%;
+}
+.email-id > ul > li > a:hover{
+    text-decoration: underline;
+    color:rgb(108, 122, 115);
+    text-shadow: 1px 4px 6px #12edb6b8;
+}
+.social-platform > ul > li > a:hover{
+    text-decoration: underline;
+    color:rgb(108, 122, 115);
+    text-shadow: 1px 4px 6px #12edb6b8;
+}
+@media (max-width:550px) {
+    .contact-in-div{
+        width: 95%;
+        height: 95%;
+        
+    }
+    .title-div{
+       justify-content: center;
+    }
+    .contact-det  h2{
+        font-size: 1.5rem;
+    }
+    .email-id > ul > li > a{
+        font-size: 1.1rem;
+    }
+    .social-platform > ul > li > a{
+        font-size: 1.1rem;
+    }
+    
+}
+@media (min-width:550px) and (max-width:700px){
+    .title-div{
+       justify-content: center;
+    }
+    .contact-det  h2{
+        font-size: 2rem;
+    }
+    .email-id > ul > li > a{
+        font-size: 1.4rem;
+    }
+    .social-platform > ul > li > a{
+        font-size: 1.4rem;
+    }
+    
+}
