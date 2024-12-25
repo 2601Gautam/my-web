@@ -115,7 +115,7 @@
     width: 100%; 
     height: 100%; 
     object-fit:contain;
-    border-radius : 5px;
+    border-radius : 50px;
 }
 @media (max-width:701px) {
     .home-in-div{
