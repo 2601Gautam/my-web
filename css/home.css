@@ -117,12 +117,12 @@
     height: 100%; 
     object-fit:auto;
     border-radius: 10px;
-    box-shadow: 2px 4px 8px #1db69a;
+    box-shadow: 2px 4px 8px #14403995;
     transition: box-shadow 1s ease-in;
     
 }
 #home-img img:hover{
-    box-shadow: 4px 8px 12px #1db69a;
+    box-shadow: 4px 8px 12px #14403995;
 }
 @media (max-width:701px) {
     .home-in-div{
