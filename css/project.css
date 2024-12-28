@@ -44,7 +44,7 @@
     transform: scale(1.1);
 }
 .p-text:hover{
-    border: 1px solid black;
+    box-shadow: 2px 4px 8px #040908;
 }
 
 .p-text > h2{
