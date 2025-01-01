@@ -12,11 +12,11 @@
     background-color: #A0C7C0;
 }
 .nav-inner-div{
-    display: flex;
-    height: 85%;
-    width: 85%;
-    justify-content: space-between;
-    align-items: center;
+    height: 100%;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
     background-color: #A0C7C0;
 }
 
@@ -30,9 +30,13 @@
 }
 .nav-ele{
     transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s linear;
 }
 .nav-ele:hover{
-    transform: scale(1.2);
+    box-shadow: 0px 4px 8px white;
 }
 .nav-ele a:hover{
     color:#D5FAE9;
@@ -81,6 +85,7 @@
 #home-intro-text > p{
     font-family: 'Arapey', serif;
     font-size: 2rem;
+    position: relative;;
     color: black;
 }
 #home-img{
@@ -94,23 +99,23 @@
 }
 #home-img img{
     border: black 1px solid;
-    width: 80%; 
+    width: 75%; 
     height: 75%;  
     object-fit:auto;
     border-radius: 10px;
-    box-shadow: 2px 4px 8px #040908;
-    transition: box-shadow 1s ease-in;
+    transition: box-shadow 0.5s ease-in;
 }
 #home-img img:hover{
-    box-shadow: 4px 8px 10px #040908;
+    box-shadow: 0px 0px 8px #040908;
 }
 @media (max-width:576px) {
-    .nav-ele a {
-        font-size: 0.75rem;
-    }
     .nav-inner-div{
-        justify-content: space-between;
-        width: 95%;
+        gap:5px;
+        width: 100%;
+    }
+    
+    .nav-ele a {
+        font-size: 0.7rem;
     }
     .home-in-div{
         height: 90%;

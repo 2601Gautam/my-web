@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .project-in-div
 {
     width: 85%;
@@ -44,7 +45,7 @@
     transform: scale(1.1);
 }
 .p-text:hover{
-    box-shadow: 2px 4px 8px #040908;
+    box-shadow: 4px 4px 8px white;
 }
 
 .p-text > h2{
