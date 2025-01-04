@@ -36,11 +36,11 @@
     transition: all 0.1s linear;
 }
 .nav-ele:hover{
-    box-shadow: 0px 4px 8px white;
+    box-shadow: 4px 4px 8px white;
 }
 .nav-ele a:hover{
-    color:#D5FAE9;
-    text-shadow: 1px 4px 6px #4abb9f7a;
+    color:white;
+    text-shadow: 1px 4px 6px #293634;
 }
 
 /*main body part of home page*/
@@ -113,7 +113,6 @@
         gap:5px;
         width: 100%;
     }
-    
     .nav-ele a {
         font-size: 0.7rem;
     }
@@ -132,7 +131,7 @@
         
     }
     #home-img img{
-        width: 55%; 
+        width: 60%; 
         height: 80%; 
     }
     #home-intro{
@@ -187,6 +186,7 @@
     #home-intro-text > p{
         font-size: 1.29rem;
     }
+    
 
 }
 @media (min-width: 769px) and (max-width: 1024px)

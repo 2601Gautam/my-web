@@ -22,93 +22,129 @@
     align-items: center;
 }
 .title-div > h1{
+    font-size : 4.5rem;
     font-family: 'Noto Serif Display', serif;
     font-weight: 600;
     color: black;
 }
-.contact-det{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.contact-det-in{
+    display: flex;
+    height: 80%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    align-content:center;
+    flex-wrap: wrap;
+    transition: all 0.3s ease-in-out;
+}    
+.contact-det-in > * {
+    padding: 20px;
+    width: 100px; 
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.contact-det h2{
+    font-size: 4rem;
     font-family: 'Arapey', serif;
     color: black;
-}       
-.contact-det  h2{
-    font-size: 2.5rem;
+    text-align: center;
+    padding: 25px 0px 10px 0px;
 }
-.contact-det ul{
-    font-size: 1.6rem;
-    text-decoration: none;
+.contact-det-in:hover{
+    box-shadow: 4px 4px 8px white;
 }
-.email-id > ul > li > a{
-    font-size: 1.6rem;
-    text-decoration: none;
-    color: rgb(0, 0, 0, 0.688);
+.contact-det-in > *{ 
+    opacity: 0.9;
+    transition: all 0.3s linear 0.1s;
 }
-.email-id > ul > li{
-    margin: 2%;
+.contact-det-in > *:hover{
+   transform: scale(1.2);
+   opacity: 1;
 }
-.social-platform > ul > li > a{
-    font-size: 1.6rem;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.688);
+.contact-det-in > * a > img{
+    height: 60px;
 }
-.email-id:hover{
-    border: 1px solid black;
-}
-.email-id:hover > ul > li > a{
-    color: rgb(0, 0, 0);
-}
-.social-platform:hover{
-    border: 1px solid black;
-}
-.social-platform:hover > ul > li > a{
-    color: rgb(0, 0, 0);
-}
-.social-platform > ul > li {
-    margin: 2%;
-}
-.email-id > ul > li > a:hover{
-    text-decoration: underline;
-    color:rgb(108, 122, 115);
-    text-shadow: 1px 4px 6px #12edb6b8;
-}
-.social-platform > ul > li > a:hover{
-    text-decoration: underline;
-    color:rgb(108, 122, 115);
-    text-shadow: 1px 4px 6px #12edb6b8;
-}
-@media (max-width:550px) {
+@media (min-width: 1025px) and (max-width: 1440px){
     .contact-in-div{
         width: 95%;
         height: 95%;
-        
     }
-    .title-div{
-       justify-content: center;
+    .title-div > h1{
+        font-size: 4rem;
     }
     .contact-det  h2{
-        font-size: 1.5rem;
+        font-size: 3.5rem;
+        padding: 10px 0 10px 0px;
     }
-    .email-id > ul > li > a{
-        font-size: 1.1rem;
-    }
-    .social-platform > ul > li > a{
-        font-size: 1.1rem;
+    .contact-det-in > * a > img{
+        height: 60px;
     }
     
 }
-@media (min-width:550px) and (max-width:700px){
+@media (min-width: 769px) and (max-width: 1024px)
+{
+    .contact-in-div{
+        width: 95%;
+        height: 95%;
+    }
+    .title-div > h1{
+        font-size: 3.5rem;
+    }
+    .contact-det  h2{
+        font-size: 3rem;
+        padding: 10px 0 10px 0px;
+    }
+    .contact-det-in > * a > img{
+        height: 55px;
+    }
+    
+}
+@media (min-width: 577px) and (max-width: 768px){
+    .contact-in-div{
+        width: 95%;
+        height: 95%;
+    }
+    
+    .title-div > h1{
+        font-size: 3rem;
+    }
+    .contact-det  h2{
+        font-size: 2.5rem;
+        padding: 10px 0 10px 0px;
+    }
+    .contact-det-in > * a > img{
+        height: 50px;
+    }
+    .contact-det-in > *:hover{
+       transform: scale(1.1);
+    }
+}
+@media (max-width:576px) {
+    .contact-in-div{
+        width: 95%;
+        height: 95%;
+    }
     .title-div{
        justify-content: center;
     }
+    .title-div > h1{
+        font-size: 2.35rem;
+    }
     .contact-det  h2{
         font-size: 2rem;
+        padding: 0px;
     }
-    .email-id > ul > li > a{
-        font-size: 1.4rem;
+    .contact-det-in > * a > img{
+        height: 45px;
     }
-    .social-platform > ul > li > a{
-        font-size: 1.4rem;
+    .contact-det-in:hover{
+        box-shadow:none;
     }
-    
+    .contact-det-in > *{ 
+        opacity: 1;
+    }
+    .contact-det-in > *:hover{
+       transform: none;
+        }
 }
