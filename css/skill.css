@@ -4,8 +4,8 @@
 }
 .skill-main-div{
     width: 100%;
-    height: 100vh;
-    background-color: #BBE3D9;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #779C98, #cbddd6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@
     width: 85%;
     height: 85%;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 1fr 1fr;
     grid-template-columns: 1fr;
 }
 .skill-title{
@@ -25,7 +25,8 @@
     align-items: center;
     font-family: 'Noto Serif Display', serif;
     font-weight: 600;
-    font-size: 3.1rem;
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 .skill{
     display: grid;
@@ -37,6 +38,7 @@
     
 }
 .skill-img{
+    min-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,15 +56,15 @@
     font-family: 'Arapey', serif;
 }
 .skill-text > h2{
-    font-weight: 590;
+    font-weight: 595;
     color: black;
 }
 .skill-text > ul{
-    font-size: 1.5rem;
-    color: rgba(0, 0, 0, 0.729);
+    font-size: 1.9rem;
+    color: rgba(0, 0, 0, 0.700);
 }
 .skill-text:hover > ul{
-    color: rgba(0, 0, 0, 0.972);
+    color: rgba(0, 0, 0, 1);
 }
 .skill-text:hover h2{
     color:white;
@@ -70,9 +72,8 @@
     transform: translateX(10px);
 }
 .skill > .skill-img > img{
-    height: 80%;
-    width: 80%;
-    object-fit:contain;
+    max-height: 80%;
+    max-width: 80%;  
 } 
 @media (min-width: 1025px) and (max-width: 1440px)
 {
@@ -87,12 +88,9 @@
         font-size: 2.2rem;
     }
     .skill-img > img{
-        height: 85%;
-        width: 85%;
-        object-fit:contain;
-        margin-bottom:10%;
-        position: relative;
-        left : 20px;
+        height: 80%;
+        width: 80%;
+        margin-left: 30px;
     }
     
 }
@@ -100,66 +98,92 @@
 {
     .skill-title
     {
-        font-size: 3.2rem;   
+        font-size: 2.9rem;   
     }
     .skill-text > ul{
-        font-size: 1.6rem;
+        font-size: 1.7rem;
     }
     .skill-text > h2{
         font-size: 2rem;
     }
     .skill-img > img{
-        height: 85%;
-        width: 85%;
-        object-fit:contain;
-        margin-bottom:10%;
-        position: relative;
-        left : 20px;
+        max-width: 80%; 
+        max-height: 80%; 
+        position:relative;
+        left : 30px;
     }
     
 }
-@media (min-width: 577px) and (max-width: 768px)
+@media (min-width: 401px) and (max-width: 768px)
 {
+    .skill-in-div
+    {
+        width: 95%;
+        height: 90%;
+        display: grid;
+        grid-template-rows: 0.7fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
     .skill-title
     {
-        font-size: 2.9rem;   
-    }
-    .skill-text > ul{
-        font-size: 1.4rem;
-    }
-    .skill-text > h2{
-        font-size: 1.8rem;
-    }
-    .skill-img > img{
-        height: 85%;
-        width: 85%;
-        object-fit:contain;
-        margin-bottom:10%;
-        position: relative;
-        left : 10px;
-    }
-    
-}
-@media (max-width:576px) {
-    .skill-title
-    {
-        font-size: 2.7rem;  
-        justify-content: center;
+        font-size: 2.8rem; 
+        display: flex;
+        justify-content: center;    
     }
     .skill-text > ul{
         font-size: 1.1rem;
     }
     .skill-text > h2{
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
-   
     .skill-img > img{
-        height: 100%;
-        width: 100%;
-        object-fit:auto;
-        position: relative;
-        bottom: 40px;
-        left : 10px;
+        max-height: 75%;
+        max-width: 75%;
+    }
+    .skill-img{
+        display: flex;
+        align-items: flex-start;
+        padding-top: 30px;
+    }
+    .skill-text:hover + .skill-img{
+        transform: none;
+    }
+    .skill-text:hover{
+        box-shadow: none;
+    }
+    .skill-text:hover h2{
+        text-shadow: none;
+        transform: none;
+    }
+}
+@media (max-width:400px) {
+    .skill-in-div
+    {
+        width: 95%;
+        height: 95%;
+        display: grid;
+        grid-template-rows: 0.6fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .skill-title
+    {
+        font-size: 2.6rem;  
+        justify-content: center;
+    }
+    .skill-text > ul{
+        font-size: 0.8rem;
+    }
+    .skill-text > h2{
+        font-size: 1.1rem;
+    }
+    .skill-img{
+        display: flex;
+        align-items: flex-start;
+        padding-top: 40px;
+    }
+    .skill-img > img{
+        max-width: 75%; 
+        max-height: 75%; 
     } 
     .skill-text:hover + .skill-img{
         transform: none;

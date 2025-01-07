@@ -2,9 +2,10 @@
     padding: 0px;
     margin: 0px;
 }
+
 .contact-main-div{
-    height: 100vh;
-    background-color: #BBE3D9;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #779C98, #cbddd6);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -12,30 +13,32 @@
 }
 .contact-in-div{
     width: 85%;
-    height: 85%;
+    min-height: 85%;
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1.5fr 2fr;
 }
 .title-div{
     grid-row: 1 / 2;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 .title-div > h1{
-    font-size : 4.5rem;
+    font-size : 4rem;
     font-family: 'Noto Serif Display', serif;
     font-weight: 600;
     color: black;
+    margin-bottom: 20px;
 }
 .contact-det-in{
     display: flex;
-    height: 80%;
+    max-height: 90%;
     width: 100%;
     justify-content: space-around;
     align-items: center;
     align-content:center;
     flex-wrap: wrap;
     transition: all 0.3s ease-in-out;
+    padding : 10px 0px 10px 0px;
 }    
 .contact-det-in > * {
     padding: 20px;
@@ -49,13 +52,10 @@
     font-family: 'Arapey', serif;
     color: black;
     text-align: center;
-    padding: 25px 0px 10px 0px;
-}
-.contact-det-in:hover{
-    box-shadow: 4px 4px 8px white;
+    padding: 10px 0px 20px 0px;
 }
 .contact-det-in > *{ 
-    opacity: 0.9;
+    opacity: 0.8;
     transition: all 0.3s linear 0.1s;
 }
 .contact-det-in > *:hover{
@@ -65,82 +65,73 @@
 .contact-det-in > * a > img{
     height: 60px;
 }
-@media (min-width: 1025px) and (max-width: 1440px){
-    .contact-in-div{
-        width: 95%;
-        height: 95%;
-    }
-    .title-div > h1{
-        font-size: 4rem;
-    }
-    .contact-det  h2{
-        font-size: 3.5rem;
-        padding: 10px 0 10px 0px;
-    }
-    .contact-det-in > * a > img{
-        height: 60px;
-    }
-    
-}
 @media (min-width: 769px) and (max-width: 1024px)
 {
     .contact-in-div{
-        width: 95%;
-        height: 95%;
+        width: 90%;
+        height: 90%;
+        grid-template-rows: 1.5fr 2fr;
     }
     .title-div > h1{
         font-size: 3.5rem;
     }
     .contact-det  h2{
         font-size: 3rem;
-        padding: 10px 0 10px 0px;
     }
     .contact-det-in > * a > img{
         height: 55px;
-    }
-    
+     }
 }
-@media (min-width: 577px) and (max-width: 768px){
+@media (min-width: 401px) and (max-width: 768px){
     .contact-in-div{
         width: 95%;
-        height: 95%;
+        height: 90%;
+        grid-template-rows: 0.6fr 1fr;
+        grid-template-columns: 1fr;
     }
-    
+    .title-div{
+        
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
     .title-div > h1{
-        font-size: 3rem;
+        font-size: 2.55rem;
     }
     .contact-det  h2{
         font-size: 2.5rem;
-        padding: 10px 0 10px 0px;
     }
     .contact-det-in > * a > img{
         height: 50px;
     }
-    .contact-det-in > *:hover{
-       transform: scale(1.1);
+    .contact-det-in > *{ 
+        opacity: 1;
     }
+    .contact-det-in > *:hover{
+       transform: none;
+        }
 }
-@media (max-width:576px) {
+@media (max-width:400px) {
     .contact-in-div{
         width: 95%;
         height: 95%;
+        grid-template-rows: 0.5fr 1fr;
+        grid-template-columns: 1fr;
     }
     .title-div{
        justify-content: center;
+       align-items: center;
     }
     .title-div > h1{
         font-size: 2.35rem;
     }
     .contact-det  h2{
         font-size: 2rem;
-        padding: 0px;
     }
     .contact-det-in > * a > img{
         height: 45px;
     }
-    .contact-det-in:hover{
-        box-shadow:none;
-    }
+    
     .contact-det-in > *{ 
         opacity: 1;
     }
