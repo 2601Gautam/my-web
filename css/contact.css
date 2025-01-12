@@ -54,6 +54,7 @@
     color: black;
     text-align: center;
     padding: 10px 0px 20px 0px;
+    font-weight: 550;
 }
 .contact-det-in > * > *{ 
     opacity: 0.8;
