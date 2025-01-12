@@ -25,7 +25,7 @@
     font-family: 'Noto Serif Display', serif;
     font-size: 1.6em;
     font-weight: 520;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+    transition: all 0.3s linear;
 }
 .nav-ele{
     transition: transform 0.3s ease-in-out;
@@ -40,9 +40,10 @@
     padding-bottom: 5px;
     border-bottom: 3px solid #6F938F;
 }
-.nav-ele a:hover{
+.nav-ele:hover a{
     color:white;
-    text-shadow: 1px 4px 6px #293634;
+    text-shadow: 2px 6px 8px black;
+    font-weight: 700;
 }
 
 /*main body part of home page*/
@@ -152,9 +153,10 @@
     }
     .nav-ele:hover{
         box-shadow: none;
+        border-bottom:none;
     }
-    .nav-ele a:hover{
-        color:white;
+    .nav-ele:hover a{
+        color:black;
         text-shadow: none;
     }
     #home-img img:hover{
@@ -199,6 +201,18 @@
     {
         font-size: 1.8rem;
     }
+    .nav-ele:hover{
+        box-shadow: none;
+        border-bottom:none;
+    }
+    .nav-ele:hover a{
+        color:black;
+        text-shadow: none;
+    }
+    #home-img img:hover{
+        box-shadow: none;
+    }
+
     
 }
 @media (min-width: 769px) and (max-width: 1024px){

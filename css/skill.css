@@ -56,8 +56,9 @@
     font-family: 'Arapey', serif;
 }
 .skill-text > h2{
-    font-weight: 595;
+    font-weight: 500;
     color: black;
+    transition: all 0.3s ease-in-out;
 }
 .skill-text > ul{
     font-size: 1.9rem;
@@ -68,7 +69,8 @@
 }
 .skill-text:hover h2{
     color:white;
-    text-shadow: 1px 4px 6px #293634;
+    text-shadow: 2px 6px 8px black;
+    font-weight: 700;
     transform: translateX(10px);
 }
 .skill > .skill-img > img{

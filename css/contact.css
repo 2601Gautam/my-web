@@ -46,6 +46,7 @@
     display: flex;
     justify-content: center;
     margin: 10px;
+    
 }
 .contact-det h2{
     font-size: 4rem;
@@ -54,16 +55,35 @@
     text-align: center;
     padding: 10px 0px 20px 0px;
 }
-.contact-det-in > *{ 
+.contact-det-in > * > *{ 
     opacity: 0.8;
     transition: all 0.3s linear 0.1s;
 }
-.contact-det-in > *:hover{
+.contact-det-in > * > a:hover{
    transform: scale(1.2);
    opacity: 1;
+   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
 .contact-det-in > * a > img{
     height: 60px;
+}
+.platform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.platform p{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: black;
+}
+.contact-det-in > * > a:hover + p{
+    color:white;
+    text-shadow: 2px 2px 8px black;
 }
 @media (min-width: 769px) and (max-width: 1024px)
 {
@@ -104,12 +124,15 @@
     .contact-det-in > * a > img{
         height: 50px;
     }
-    .contact-det-in > *{ 
+    .contact-det-in > * > *{ 
         opacity: 1;
     }
-    .contact-det-in > *:hover{
+    .contact-det-in > * > *:hover{
        transform: none;
-        }
+    }
+    .contact-det-in > * > a:hover + p{
+        text-shadow: none;
+    }
 }
 @media (max-width:400px) {
     .contact-in-div{
@@ -132,10 +155,13 @@
         height: 45px;
     }
     
-    .contact-det-in > *{ 
+    .contact-det-in > * > *{ 
         opacity: 1;
     }
-    .contact-det-in > *:hover{
+    .contact-det-in > * > *:hover{
        transform: none;
-        }
+     }
+    .contact-det-in > * > a:hover + p{
+            text-shadow: none;
+    }
 }

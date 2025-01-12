@@ -41,9 +41,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s ease-in-out;
 }
-.p-text:hover + .p-img{
+.p-img img{
+    transition: all 0.3s ease-in-out;
+}
+.p-text:hover ~ .p-img img {
+    filter: drop-shadow(2px 4px 8px #476b66); /* Add the drop shadow on hover */
     transform: scale(1.1);
 }
 .p-text:hover{
@@ -71,7 +74,7 @@
 .p-text > p > a:hover{
     text-decoration: underline;
     color:white;
-    text-shadow: 1px 4px 6px #80B4AB;
+    text-shadow: 2px 6px 8px black;
 }
 .p-text:hover h2{
     color:white;
@@ -166,7 +169,8 @@
     .p-text > p > a{
         font-size: 1.1rem;
     }
-    .p-text:hover + .p-img{
+    .p-text:hover ~ .p-img img {
+        filter: none; 
         transform: none;
     }
     .p-text:hover{
@@ -210,7 +214,8 @@
         max-width: 75%; 
         max-height: 75%; 
     } 
-    .p-text:hover + .p-img{
+    .p-text:hover ~ .p-img img {
+        filter: none; 
         transform: none;
     }
     .p-text:hover{
