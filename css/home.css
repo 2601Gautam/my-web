@@ -205,7 +205,7 @@
     grid-row: 1 / 2; /* Occupy rows 1 and 2 */
     grid-column: 1 / 2;
   }
-  #home-img img {
+  #home-img > img{
     max-width: 90%;
     max-height: 90%;
     border-radius: 50%;
