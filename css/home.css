@@ -5,7 +5,7 @@
 /*nav bar*/
 .navbar-main-div {
   min-height: 10vh;
-  width: 100%;
+  min-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +16,7 @@
 }
 .nav-inner-div {
   min-height: 10vh;
-  width: 95%;
+  min-width: 95%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 20px;
@@ -59,7 +59,7 @@
 .home-main-div {
   background: linear-gradient(to right, #4b3618, #6f5425, #a67c52, #d2b48c);
   min-height: 90vh;
-  width: 100%;
+  min-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
