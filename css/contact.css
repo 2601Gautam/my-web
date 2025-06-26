@@ -87,6 +87,7 @@
     text-shadow: 2px 2px 8px black;
 }
 @media (min-width: 769px) and (max-width: 1024px)
+
 {
     .contact-in-div{
         width: 90%;

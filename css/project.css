@@ -1,228 +1,218 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+  padding: 0px;
+  margin: 0px;
 }
-.project-main-div{
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #779C98, #cbddd6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navbar-main-div {
+  min-height: 10vh;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #4b3618, #6f5425, #a67c52, #d2b48c);
 }
-.project-in-div
-{
-    width: 85%;
-    height: 85%;
-    display: grid;
-    grid-template-rows: 0.6fr 1fr 1fr;
-    grid-template-columns: 1fr;
+.navbarIconDiv {
+  display: none;
 }
-#project-title{
-    grid-row: 1 / 2;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-family: 'Noto Serif Display', serif;
+.nav-inner-div {
+  min-height: 10vh;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.nav-ele a {
+  text-decoration: none;
+  color: black;
+  font-family: "Noto Serif Display", serif;
+  font-size: 1.6em;
+  font-weight: 520;
+  transition: all 0.3s linear;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  transition: all 0.1s linear;
+}
+.nav-ele {
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s linear;
+  height: 100%;
+  border-bottom: 2px solid transparent;
+}
+.nav-ele:hover {
+  border-bottom: 2px solid white;
+}
+.nav-ele a:active {
+  transform: scale(0.95);
+}
+.nav-ele:hover a {
+  color: white;
+  text-shadow: 2px 6px 8px black;
+  font-weight: 700;
+}
+
+.project-main-div {
+  min-width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right, #4b3618, #6f5425, #a67c52, #d2b48c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-in-div {
+  min-width: 90%;
+  min-height: 80%;
+}
+#project-title {
+  font-family: "Noto Serif Display", serif;
+  font-weight: 600;
+  font-size: 3rem;
+  color: black;
+  text-align: center;
+}
+.all_project {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin-bottom: 20px;
+}
+.in-div {
+  border: 3px solid black;
+  margin: 3%;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.in-div h2 {
+  text-align: center;
+  font-family: "Arapey", serif;
+  font-weight: 600;
+  position: relative;
+  top: 4%;
+  color: black;
+}
+.proj_links {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+.proj_logo_div > img {
+  max-height: 500px;
+  text-align: center;
+}
+.proj_links img {
+  max-height: 80px;
+}
+.proj_logo_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proj_dec {
+  text-align: center;
+  color: white;
+  font-family: "Arapey", serif;
+  font-size: 1.5rem;
+}
+.in-div:hover {
+  border: white 3px solid;
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .nav-ele a {
+    font-size: 1.05rem;
+  }
+
+  #project-title {
     font-weight: 600;
-    font-size: 3rem;
+  }
+  .all_project {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     margin-bottom: 20px;
+  }
+  .in-div {
+    margin-left: 10%;
+    margin-right: 10%;
+    height: fit-content;
+    width: fit-content;
+  }
+  .in-div h2 {
+    font-size: 2rem;
+  }
 }
-.in-div{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-}
-.p-text{
-    grid-column: 1 / 2;
-    transition: all 0.3s ease-in-out;
-}
-.p-img{
-    min-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.p-img img{
-    transition: all 0.3s ease-in-out;
-}
-.p-text:hover ~ .p-img img {
-    filter: drop-shadow(2px 4px 8px #476b66); /* Add the drop shadow on hover */
-    transform: scale(1.1);
-}
-.p-text:hover{
-    box-shadow: 4px 4px 8px white;
-}
-
-.p-text > h2{
-    font-weight: 595;
-    color: black;
-}
-.p-text > p{
-    font-size: 1.9rem;
-    color: rgba(0, 0, 0, 0.700);
-}
-.p-text:hover > p{
-    color: rgba(0, 0, 0, 1);
-}
-
-.p-text > p > a{
-    font-size: 1.9rem;
-    color: rgba(0, 0, 0, 0.729);
+@media (max-width: 600px) {
+  .navbarIconDiv {
+    display: block;
+    min-height: 10vh;
+    width: 100%;
+    height: 50px;
+    position: relative;
+  }
+  .nav-links {
     text-decoration: none;
-    font-weight: 600;
-}
-.p-text > p > a:hover{
-    text-decoration: underline;
-    color:white;
-    text-shadow: 2px 6px 8px black;
-}
-.p-text:hover h2{
-    color:white;
-    text-shadow: 1px 4px 6px #293634;
-    transform: translateX(10px);
-}
-.p-text > *{
-    padding: 5px;
-    font-family: 'Arapey', serif;
-}
-.in-div > .p-img > img{
-    max-height: 80%;
-    max-width: 80%;   
-} 
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: max-content;
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    z-index: 2;
+  }
+  .nav-links li {
+    width: max-content;
+    font-size: 20px;
+    font-family: "Noto Serif Display", serif;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #d2b48c;
+    font-weight: 500;
+  }
+  .menu-close-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+  }
+  .menu-open-icon {
+    right: 20px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+  }
 
-@media (min-width: 1025px) and (max-width: 1440px)
-{
-    #project-title
-    {
-        font-size: 3.3rem;   
-    }
-    .p-text > p{
-        font-size: 1.5rem;
-    }
-    .p-text > h2{
-        font-size: 1.8rem;
-    }
-    .in-div > .p-img > img{
-        height: 80%;
-        width: 80%;
-        margin-left: 30px;
-    }  
-    .p-text > p > a{
-        font-size: 1.5rem;
-    }
-    
-}
-@media (min-width: 769px) and (max-width: 1024px)
-{
-    #project-title
-    {
-        font-size: 2.9rem;   
-    }
-    .p-text > p{
-        font-size: 1.3rem;
-    }
-    .p-text > h2{
-        font-size: 1.6rem;
-    }
-    .in-div > .p-img > img{
-        max-width: 80%; 
-        max-height: 80%; 
-        position:relative;
-        left : 30px;
-    }  
-    .p-text > p > a{
-        font-size: 1.3rem;
-    }
-    
-}
-@media (min-width: 401px) and (max-width: 768px)
-{
-    .project-in-div
-    {
-        width: 95%;
-        height: 90%;
-        display: grid;
-        grid-template-rows: 0.7fr 1fr 1fr;
-        grid-template-columns: 1fr;
-    }
-    #project-title
-    {
-        font-size: 2.8rem; 
-        display: flex;
-        justify-content: center;  
-    }
-    .p-text > p{
-        font-size: 1.1rem;
-    }
-    .p-text > h2{
-        font-size: 1.25rem;
-    }
-    .in-div > .p-img{
-        display: flex;
-        align-items: flex-start;
-        padding-top: 30px;
-    }
-    .in-div > .p-img > img{
-        max-height: 75%;
-        max-width: 75%;
-    }  
-    .p-text > p > a{
-        font-size: 1.1rem;
-    }
-    .p-text:hover ~ .p-img img {
-        filter: none; 
-        transform: none;
-    }
-    .p-text:hover{
-        box-shadow: none;
-    }
-    .p-text:hover h2{
-        text-shadow: none;
-        transform: none;
-    }
-}
-@media (max-width:400px) {
-    .project-in-div
-    {
-    width: 95%;
-    height: 95%;
+  .nav-inner-div {
+    display: none;
+  }
+  #project-title {
+    font-weight: 600;
+  }
+  .proj_logo_div > img {
+    max-height: 300px;
+    text-align: center;
+  }
+  .proj_links img {
+    max-height: 80px;
+  }
+  .all_project {
     display: grid;
-    grid-template-rows: 0.6fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
-    }
-    #project-title
-    {
-        font-size: 2.6rem; 
-        display: flex;
-        justify-content: center;
-    }
-    .p-text > p{
-        font-size: 0.8rem;
-    }
-    .p-text > h2{
-        font-size: 1.1rem;
-    }
-    .p-text > p > a{
-        font-size: 0.8rem;
-    }
-    .in-div > .p-img{
-        display: flex;
-        align-items: flex-start;
-        padding-top: 40px;
-    }
-    .in-div > .p-img > img{
-        max-width: 75%; 
-        max-height: 75%; 
-    } 
-    .p-text:hover ~ .p-img img {
-        filter: none; 
-        transform: none;
-    }
-    .p-text:hover{
-        box-shadow: none;
-    }
-    .p-text:hover h2{
-        text-shadow: none;
-        transform: none;
-    }
+    margin-bottom: 20px;
+  }
+  .in-div {
+    height: auto;
+    max-width: 500px;
+  }
+  .in-div h2 {
+    font-size: 2rem;
+  }
 }

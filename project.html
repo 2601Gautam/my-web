@@ -10,36 +10,93 @@
     <link rel="stylesheet" href="./css/project.css">
 </head>
 <body>
+        <section id="navbar">
+        <div class="navbar-main-div">
+            <div class="navbarIconDiv">
+          <div class="menu-close-icon">
+             <img src="img/nav_icon.png" alt="navbaricon" height="50px"/>
+          </div>
+          <div class="menu-open-icon">
+             <img src="img/close.png" alt="navbarclose" height="50px"/>
+          </div>
+          <ul id="navLinks" class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="skill.html">Resume</a></li>
+            <li><a href="contact.html">Contact me</a></li>
+            <li><a href="about.html">About me</a></li>
+          </ul>
+        </div>
+            <div class="nav-inner-div">
+                <div id="home" class="nav-ele">
+                    <a href="index.html">Home</a>
+                </div>
+                <div id="resume" class="nav-ele">
+                    <a href="resume.html">Resume</a>
+                </div>
+                <div id="skills" class="nav-ele">
+                    <a href="skill.html">Skills</a>
+                </div>
+                <div id="contact_me" class="nav-ele">
+                    <a href="contact.html">Contact me</a>
+                </div>
+                <div id="about_me" class="nav-ele">
+                    <a href="about.html">About me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <section id="project">
         <div class="project-main-div">
             <div class="project-in-div">
                 <div id="project-title">
                     <p>My projects</p>
                 </div>
-                <div class="in-div">
-                    <div class="p-text">
-                        <h2><b>1.</b> College Timetable Generator</h2>
-                        <p>A group project using C++ and DSA to automate conflict
-                            free college timetables.</p>
-                        <p>Go to <a href="https://github.com/jayansh-gaadhe/DSA_Project" target="_blank" >Timetable Generator</a> and see how it works!</p>
+                <div class="all_project">
+                    <div class="in-div blog-div">
+                        <h2>Blog Application</h2>
+                        <div class="proj_logo_div">
+                            <img src="./img/blog_app.png" alt="blog-logo">
+                        </div>
+                        <div class="proj_dec">
+                            <p>Blog posts made simple: create, edit, view. Built with Node.js and Express.js for smooth backend handling.</p>
+                        </div>
+                        <div class="proj_links">
+                            <a href="https://github.com/2601Gautam/Blog-application"><img src="img/github.png" alt="github_link"></a>
+                            <a href="https://blog-application-black-five.vercel.app/"><img src="img/weblogo.png" alt="github_link"></a>
+                        </div>
                     </div>
-                    <div class="p-img">
-                        <img src="./img/timetable.png" alt="timetable png" > 
+                    <div class="in-div">
+                        <h2>Convolution Code</h2>
+                        <div class="proj_logo_div">
+                            <img src="./img/convo.png" alt="Convolution code logo">
+                        </div>
+                        <div class="proj_dec">
+                            <p>A project that uses the Viterbi algorithm to encode and decode messages with error correction.</p>
+                        </div>
+                        <div class="proj_links">
+                            <a href="https://github.com/2601Gautam/Convolution-Code"><img src="img/github.png" alt="github_link"></a>
+                        </div>
                     </div>
-                </div>
-                <div class="in-div">
-                    <div class="p-text">
-                        <h2><b>2.</b> TinDog</h2>
-                        <p>A website built with HTML and CSS to connect dogs and
-                            their owners.</p>
-                        <p>Go to <a href="https://2601gautam.github.io/TinDog-web/" target="_blank">TinDog</a> and start meeting furry friends!</p>                    
-                    </div>
-                    <div class="p-img">
-                        <img src="./img/tindog.png" alt="dog png"> 
+                    <div class="in-div">
+                        <h2>Invest Hub</h2>
+                        <div class="proj_logo_div">
+                            <img src="./img/invest_hub.png" alt="Invest Hub logo">
+                        </div>
+                        <div class="proj_dec">
+                        <div class="proj_dec">
+                            <p>Invest Hub: Stock market app to manage IPOs, companies, stocks, and portfolios. Uses PostgreSQL with a normalized database.</p>
+                        </div>
+                        </div>
+                        <div class="proj_links">
+                            <a href="https://github.com/2601Gautam/Invest-Hub"><img src="img/github.png" alt="github_link"></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <script src="index.js"></script>
 </body>
 </html>
