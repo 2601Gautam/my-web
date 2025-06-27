@@ -18,7 +18,7 @@
   min-height: 10vh;
   min-width: 95%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
 }
 .nav-ele a {
@@ -161,7 +161,8 @@
 .nav-links a{
   text-decoration: none;
   color: #d2b48c;
-  font-weight: 500;
+  font-weight: 800;
+  padding-bottom:2px ;
 }
 .menu-close-icon{
   cursor: pointer;
