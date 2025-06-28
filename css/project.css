@@ -17,7 +17,7 @@
   min-height: 10vh;
   min-width: 95%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 20px;
 }
 .nav-ele a {
