@@ -114,6 +114,86 @@
   max-height: 90%;
   border-radius: 30px;
 }
+.Achievements{
+  background: linear-gradient(to right, #4b3618, #6f5425, #a67c52, #d2b48c);
+  /* background-color: red; */
+  min-height: 90vh;
+  min-width: 100%;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+}
+.Achi_in{
+  height: 90%;
+  width: 90%;
+  /* background-color: white; */
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+.achi_title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  /* background-color: burlywood; */
+}
+.achi_title p{
+  font-size: 3rem;
+  color: black;
+  font-weight: 900;
+  font-family: "Noto Serif Display", serif;
+}
+.box-div{
+  /* background-color: blue; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.inbox_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.inbox_img img{
+  border-radius: 10px;
+  height: 100px;
+}
+.inbox{
+  padding: 10px;
+  margin: 10px;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 1fr;
+  border-radius: 10px;
+  /* border: 2px solid white; */
+  transition: all 0.3s ease-in-out;
+}
+.inbox:hover{
+  box-shadow: 0px 4px 15px rgba(180, 109, 10, 0.6);
+  transform: scale(1.05);
+}
+.inbox:hover .inbox_text p{
+  color: white;
+}
+.inbox_text{
+  display: flex;
+  justify-content: center;
+  grid-row: 2/3;
+  align-items: flex-end;
+}
+.inbox_text p{
+  color: black;
+  font-size: 1rem;
+  position: relative;
+  font-family: "Arapey", serif;
+  font-weight: 900;
+  transition: all 0.3s ease-in-out;
+}
+/* .Achievements:hover .inbox_img img{
+  opacity: 1;
+} */
 @media (min-width: 600px) and (max-width: 1000px) {
   .nav-ele a {
     font-size: 1.05rem;
@@ -130,6 +210,20 @@
     max-width: 100%;
     max-height: 100%;
   }
+  
+.achi_title p{
+  font-size: 2rem;
+}
+.box-div{
+  /* background-color: blue; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.inbox_text p{
+  color: black;
+  font-size: 0.9rem;
+}
 }
 @media (max-width: 600px) {
   .navbarIconDiv{
@@ -212,4 +306,17 @@
     max-height: 90%;
     border-radius: 50%;
   }
+  .achi_title p{
+  font-size: 2rem;
+}
+.box-div{
+  /* background-color: blue; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.inbox_text p{
+  color: black;
+  font-size: 0.8rem;
+}
 }

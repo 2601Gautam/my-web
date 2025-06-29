@@ -19,3 +19,11 @@ document.addEventListener("DOMContentLoaded", function () {
     navLinks.style.display = "none"; // Hide menu
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  AOS.init({
+    duration: 800,
+    once: false,
+    mirror: true, // animate out when scrolling past
+    easing: "ease-in-out", // offset (in px) from the trigger point
+  });
+});
