@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     duration: 800,
     once: false,
     mirror: true, // animate out when scrolling past
+    offset: 100,
     easing: "ease-in-out", // offset (in px) from the trigger point
   });
 });
