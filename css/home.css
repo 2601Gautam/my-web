@@ -159,6 +159,7 @@
 .inbox_img img{
   border-radius: 10px;
   height: 100px;
+  transition: all 0.3s linear;
 }
 .inbox{
   padding: 10px;
@@ -172,7 +173,10 @@
 }
 .inbox:hover{
   box-shadow: 0px 4px 15px rgba(180, 109, 10, 0.6);
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
+}
+.inbox:hover .inbox_img img{
+  transform: scale(1.3);
 }
 .inbox:hover .inbox_text p{
   color: white;

@@ -114,20 +114,6 @@
   border-radius: 20px;
   box-shadow: 6px 6px 6px 4px #9d7531;
 }
-.techSkillLogo img {
-  transform: translateX(-800%);
-  transition: all 0.4s ease-in-out;
-}
-.tech-skill:hover .techSkillLogo img {
-  transform: translateX(0%);
-}
-.softSkillLogo img {
-  transform: translateX(-800%);
-  transition: all 0.4s ease-in-out;
-}
-.soft-skill:hover .softSkillLogo img {
-  transform: translateX(0%);
-}
 .skillDec {
   width: 100%;
 }
